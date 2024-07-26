@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav ,
+.banner,
+.brand-container,
+.popular-container,
+.featured-container{
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+/* nav section start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+nav h2{
+    font-size: 2rem;
+}
+nav ul {
+    display:flex;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: black;
+}
+
+
+@media screen and (max-width:576px) {
+    nav ul {
+        display: none;
+    }
+    body{
+        margin: 0 20px;
+    }
+}
+
+
+/* Banner section start */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 30px;
+}
+.banner-text h2{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.btn{
+    margin-top: 20px;
+    width: 130px;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    background: purple;
+    color: #fff;
+}
+.banner-img{
+    width: 50%;
+}
+.banner-img .img1{
+    position: relative;
+    z-index: 1;
+}
+.banner-img .img2{
+    position: absolute;
+    margin-left: -450px;
+    margin-top: -22px;
+}
+
+
+@media screen  and (max-width:576px){
+    .banner{
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    .banner-text{
+        margin-top: 30px;
+    }
+    .banner-text h2{
+        font-size: 2rem;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    .banner-img img {
+        width: 100%;
+    }
+    .banner-img .img2{
+        display: none;
+
+    }
+}
+
+
+
+/* brands section strat */
+.brand-container{
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.507);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    align-items: center;
+}
+@media screen  and (max-width:576px){
+    .brand-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        
+    }
+}
+
+/* popular section start */
+.popular-container{
+    margin-top: 100px;
+}
+.popular-container h2{
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+.popular-content{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+.card{
+    width: 280px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.562);
+}
+.card img{
+    width: 100%;
+}
+.card h3{
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+.card h4{
+    padding: 5px 0;
+    color:orangered;
+}
+.card p{
+    line-height: 25px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+
+@media screen  and (max-width:576px){
+    .popular-content{
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* popular section end */
+
+
+
+/* featurted section start */
+.featured-container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.featured-img{
+    width: 80%;
+}
+.featured-img img{
+    width: 100%;
+}
+.featured-text h1{
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.featured-text p{
+    color: rgba(0, 0, 0, 0.671);
+    font-weight: 600;
+    line-height: 20px;
+}
+.featured-text button{
+    margin-top: 30px;
+    padding: 8px 30px;
+    border: none;
+    background:palevioletred ;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+@media screen  and (max-width:576px){
+    .featured-container{
+        flex-direction: column;
+    }
+}
+/* featured section end */
+
+
+/* footer section start */
+.footer-container{
+    max-width: 1005px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(4, 4, 27);
+    margin-top: 50px;
+}
+.footer-container h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.footer-container p{
+    font-size:1.25rem ;
+    color: #fff;
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+
+/* footer section end */
